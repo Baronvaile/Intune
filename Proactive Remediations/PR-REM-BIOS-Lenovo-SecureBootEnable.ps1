@@ -32,4 +32,4 @@ $PSWD = (Get-WmiObject -Class Lenovo_BiosPasswordSettings -Namespace root\wmi).P
 }
  
 #Set-BIOSSetting -Setting "Wake On Lan" -Value "Automatic" -Password "AFNI"
-Set-BIOSSetting -Setting "SecureBoot" -Value "Enable" -Password "strangel0ve"
+Set-BIOSSetting -Setting "SecureBoot" -Value "Enabled" -Password "strangel0ve"
