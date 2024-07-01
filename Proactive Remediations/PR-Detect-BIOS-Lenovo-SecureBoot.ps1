@@ -19,7 +19,7 @@ $BIOSSetting = $BIOS | Where-Object {$_.CurrentSetting -like $Setting} | Format-
     Write-Output $result
 }
  
-$Setting = "*SecureBoot*"
+$Setting = "*Secure Boot*"
 
 $obj = Get-BIOSSetting -Setting $Setting
 Write-Output $obj
