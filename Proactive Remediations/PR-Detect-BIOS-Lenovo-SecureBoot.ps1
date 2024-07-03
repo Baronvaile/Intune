@@ -23,3 +23,10 @@ $Setting = "*Secure Boot*"
 
 $obj = Get-BIOSSetting -Setting $Setting
 Write-Output $obj
+If ($obj -eq $true){
+    Write-Output "Compliant"
+    Exit 0
+}
+else { 
+Write-Warning "Not Compliant"
+Exit 1}
